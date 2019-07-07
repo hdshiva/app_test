@@ -1,4 +1,4 @@
-@Library('pipeline-library-demo')_
+@Library('jenkins-pipeline-shared-lib-sample')_
 
 stage('Demo') {
     echo 'testing demo'
