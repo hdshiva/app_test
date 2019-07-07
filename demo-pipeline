@@ -1,6 +1,12 @@
+import org.opower.*
 @Library('jenkins-pipeline-shared-lib-sample')_
 
 stage('Demo') {
     echo 'testing demo'
     clientHello 'demoClient'
+}
+
+stage("Automation Test"){
+    qaframework=new qaframeworkUtil(this)
+    qaframework.qaframeworkexec("astro","src","19.7", "QA","QE-Automation")
 }
